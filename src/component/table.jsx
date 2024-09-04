@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 import "./table.css";
 import { MdDelete } from "react-icons/md";
 import { FaRegEdit } from "react-icons/fa";
 import { useState } from 'react';
+
 
 const Table = ({ data, pageChange, startIndex, lastIndex, page, totalPage, setData, setFilteredData }) => {
   const [selectedRows, setSelectedRows] = useState([]);
