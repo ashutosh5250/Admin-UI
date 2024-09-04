@@ -61,18 +61,17 @@ function App() {
   };
 
   return (
-    <>
-    <div className='search'>
+    <div>
     <form>
         <input 
           id="text" 
           type='text' 
-          placeholder='Search'
+          placeholder='Search by name, email or role'
           value={searchTerm}
           onChange={handleSearch}
         />
       </form>
-      </div>
+     
       <Table
         data={filteredData}
         pageChange={pageChange}
@@ -83,7 +82,7 @@ function App() {
         setData={setData}
         setFilteredData={setFilteredData}
       />
-    </>
+    </div>
   );
 }
 
